@@ -1,0 +1,12 @@
+.filter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: var(--size-top);
+}
+.filter .button {
+  display: block;
+  padding: 6px 22px;
+}
+.filter .list:not(:first-child) {
+  margin-left: 8px;
+}
