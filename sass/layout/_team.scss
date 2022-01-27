@@ -40,40 +40,39 @@
     padding-top: var(--size-between);
     padding-bottom: var(--size-between);
   }
-
-  &__social {
-    display: flex;
-    justify-content: center;
-    margin-top: 16px;
-
-    &__icon {
-      fill: currentColor;
-    }
-
-    &__item + &__item {
-      margin-left: 10px;
-    }
-  }
 }
 
-.team-member__social__link {
+.team-social {
   display: flex;
   justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
+  margin-top: 16px;
 
-  background-color: var(--btn-color);
-  border-radius: 50%;
-  color: #afb1b8;
+  &__icon {
+    fill: currentColor;
+  }
 
-  transition-property: background-color, color;
-  transition-duration: var(--animation-duration);
-  transition-timing-function: var(--animation-type);
+  &__item + &__item {
+    margin-left: 10px;
+  }
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
 
-  &:hover,
-  &:focus {
-    background-color: var(--accent-color);
-    color: var(--btn-color);
+    background-color: var(--btn-color);
+    border-radius: 50%;
+    color: #afb1b8;
+
+    transition-property: background-color, color;
+    transition-duration: var(--animation-duration);
+    transition-timing-function: var(--animation-type);
+
+    &:hover,
+    &:focus {
+      background-color: var(--accent-color);
+      color: var(--btn-color);
+    }
   }
 }
